@@ -1,0 +1,60 @@
+{
+  "name": "dsh-vscode-ide",
+  "version": "0.1.0",
+  "description": "Real VS Code IDE inside the DeepSeek Harness sidebar: `code serve-web` proxied same-origin and framed in a right-sidebar tab, so you chat and read code side by side.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "market/index.json",
+    "market/icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "vscode",
+    "vscode-web",
+    "ide",
+    "editor",
+    "sidebar",
+    "code-server"
+  ],
+  "license": "MIT",
+  "author": "BrotherCao",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrotherCao/dsh-vscode-ide.git"
+  },
+  "homepage": "https://github.com/BrotherCao/dsh-vscode-ide#readme",
+  "bugs": {
+    "url": "https://github.com/BrotherCao/dsh-vscode-ide/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.1"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}

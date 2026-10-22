@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="VS Code in a sidebar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f8ee8" />
+      <stop offset="1" stop-color="#0a5fb4" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="26" ry="26" fill="url(#bg)" />
+  <rect x="4" y="4" width="34" height="120" rx="26" ry="26" fill="#ffffff" fill-opacity="0.16" />
+  <rect x="20" y="26" width="3" height="18" rx="1.5" fill="#ffffff" fill-opacity="0.75" />
+  <rect x="20" y="55" width="3" height="18" rx="1.5" fill="#ffffff" fill-opacity="0.45" />
+  <rect x="20" y="84" width="3" height="18" rx="1.5" fill="#ffffff" fill-opacity="0.45" />
+  <path d="M62 40 L42 64 L62 88" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M82 40 L102 64 L82 88" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

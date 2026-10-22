@@ -1,0 +1,95 @@
+{
+  "format": 1,
+  "title": {
+    "en": "BrotherCao DSH plugins",
+    "zh": "BrotherCao 的 DSH 插件源"
+  },
+  "description": {
+    "en": "Community plugins for DeepSeek Harness. Add this index URL on the Plugins page (Discover tab) to install them from the marketplace.",
+    "zh": "DeepSeek Harness 社区插件。在「插件 → 发现」里添加下面的索引地址即可在市场里搜到并安装。"
+  },
+  "metadata": {
+    "categories": {
+      "ide": {
+        "title": {
+          "en": "Editor & IDE",
+          "zh": "编辑器与 IDE"
+        }
+      }
+    },
+    "labels": {
+      "vscode": {
+        "title": {
+          "en": "VS Code",
+          "zh": "VS Code"
+        }
+      },
+      "sidebar": {
+        "title": {
+          "en": "Sidebar",
+          "zh": "侧边栏"
+        }
+      }
+    },
+    "sortKeys": {
+      "downloads": {
+        "title": {
+          "en": "Downloads",
+          "zh": "下载量"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-vscode-ide",
+      "title": {
+        "en": "VS Code panel",
+        "zh": "VS Code 代码面板"
+      },
+      "description": {
+        "en": "A real VS Code in the right sidebar: chat on the left, read and edit code on the right. The workbench opens the current conversation's folder and follows the DSH light/dark theme.",
+        "zh": "在右侧边栏里跑真正的 VS Code：左边聊天、右边看代码改代码。面板会打开当前对话所在的文件夹，并跟随 DSH 的亮/暗主题。"
+      },
+      "icon": "./icon.svg",
+      "author": "BrotherCao",
+      "homepage": "https://github.com/BrotherCao/dsh-vscode-ide#readme",
+      "repository": {
+        "url": "https://github.com/BrotherCao/dsh-vscode-ide"
+      },
+      "metadata": {
+        "category": "ide",
+        "keywords": [
+          "vscode",
+          "vscode web",
+          "ide",
+          "editor",
+          "sidebar",
+          "code",
+          "代码",
+          "编辑器"
+        ],
+        "labels": [
+          "vscode",
+          "sidebar"
+        ],
+        "sortKeys": {
+          "downloads": 0
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1792658444,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.1"
+          }
+        }
+      ]
+    }
+  ]
+}

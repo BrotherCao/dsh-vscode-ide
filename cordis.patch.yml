@@ -1,0 +1,27 @@
+# dsh-vscode-ide — 在 DSH 侧边栏里跑真正的 VS Code
+#
+# The Node half owns one `code serve-web` process and republishes it on the DSH
+# web server's own origin at /dsh-vscode-ide/vscode/ (the iframe in
+# lib/client.js needs a first-party frame: VS Code answers with
+# X-Frame-Options: SAMEORIGIN). The web client half is served through
+# exports["./client"] and mounted by the browser boot graph.
+#
+# Manual mount equivalent (profile cordis.patch.yml):
+#
+#   - insert:
+#       - id: vscode-ide
+#         name: 'dsh-vscode-ide'
+#
+# Optional row config:
+#
+#   - insert:
+#       - id: vscode-ide
+#         name: 'dsh-vscode-ide'
+#         config:
+#           folder: 'E:\explore space\deepseek harness'  # opened by default (default: process.cwd())
+#           autoStart: true                              # warm up the server at boot (default: true)
+#           codeCli: 'C:\...\Microsoft VS Code\bin\code.cmd'  # override CLI discovery
+#           serverDataDir: 'C:\Users\me\.dsh\vscode-web\data'  # VS Code Web cache/state
+- insert:
+    - id: vscode-ide
+      name: 'dsh-vscode-ide'
